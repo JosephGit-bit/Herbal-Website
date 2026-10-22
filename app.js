@@ -205,19 +205,19 @@ function openModal(productId) {
   if (!product || !modalContent || !productModal) return;
 
   modalContent.innerHTML = `
-    <div style="aspect-ratio:1/1; background-color:#f5f5f4;">
-      <img src="${product.image}" alt="${product.name}" style="width:100%; height:100%; object-fit:cover;" onerror="this.src='${getFallbackImage()}'"/>
+    <div class="modal-media-wrapper">
+      <img src="${product.image}" alt="${product.name}" onerror="this.src='${getFallbackImage()}'"/>
     </div>
     <div class="modal-body">
       <span class="card-tagline">${product.tagline}</span>
-      <h3 class="section-title" style="margin-bottom:0.5rem">${product.name}</h3>
-      <p class="body-text" style="margin-bottom:1rem">${product.description}</p>
-      <p class="body-text" style="margin-bottom:0.5rem"><strong>Ingredients:</strong> ${product.ingredients || 'N/A'}</p>
+      <h3 class="section-title" style="margin-bottom:0.5rem; font-size:1.5rem;">${product.name}</h3>
+      <p class="body-text" style="margin-bottom:0.75rem">${product.description}</p>
+      <p class="body-text" style="margin-bottom:0.35rem"><strong>Ingredients:</strong> ${product.ingredients || 'N/A'}</p>
       <p class="body-text" style="margin-bottom:0.5rem"><strong>Usage:</strong> ${product.usage || 'N/A'}</p>
-      <div class="notice-box" style="margin-top:1rem; margin-bottom:1.5rem">
+      <div class="notice-box" style="margin-top:0.75rem; margin-bottom:1rem">
         <strong>Notice:</strong> ${product.disclaimer}
       </div>
-      <div class="card-price" style="font-size:1.5rem; margin-bottom:1rem">${formatCurrency(product.price)}</div>
+      <div class="card-price" style="font-size:1.35rem; margin-bottom:0.75rem">${formatCurrency(product.price)}</div>
       <button onclick="addToCart('${product.id}'); closeModal();" class="btn btn-primary btn-full">Add to Cart</button>
     </div>
   `;

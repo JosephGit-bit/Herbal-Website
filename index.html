@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wondie Herbal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-container">
+      <h1 class="site-title">Wondie Herbal</h1>
+      
+      <button id="cart-btn" class="cart-trigger" aria-label="Open Shopping Basket">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span id="cart-badge" class="badge badge-hidden">0</span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero-section">
+    <div class="hero-container">
+      <span class="sub-heading text-emerald-300">Pure Natural Wellness</span>
+      <h2>Botanical Remedies & Herbal Formulations</h2>
+      <p>Assisting your body naturally with wild-crafted herbal blends, vitality solutions, and mineral-dense bio-active formulas.</p>
+    </div>
+  </section>
+
+  <main class="catalog-container">
+    <div class="filter-bar">
+      <button class="filter-btn active" data-category="all">All Products</button>
+      <button class="filter-btn" data-category="pro">Pro Formulas</button>
+      <button class="filter-btn" data-category="punch">Punch Tonics</button>
+      <button class="filter-btn" data-category="blend">Herbal Blends</button>
+    </div>
+
+    <div id="product-grid" class="product-grid">
+      </div>
+  </main>
+
+  <section id="philosophy" class="content-section bg-stone-100">
+    <div class="content-container">
+      <span class="sub-heading text-emerald-800">Our Foundation</span>
+      <h2 class="section-title">Philosophy & Sourcing</h2>
+      <p class="body-text">
+        At Wondie Herbal, we believe in restoring bodily balance through untamed nature. Our ingredients are wild-crafted, sustainably harvested, and formulated to retain complete bio-active potency without artificial fillers.
+      </p>
+    </div>
+  </section>
+
+  <section id="shipping" class="content-section bg-white">
+    <div class="content-container">
+      <span class="sub-heading text-emerald-800">Fulfillment & Delivery</span>
+      <h2 class="section-title">Shipping Policy</h2>
+      <p class="body-text">
+        We take immense care in preparing our natural botanical remedies to ensure peak potency, freshness, and quality. Every order is meticulously handled according to strict quality standards.
+      </p>
+      <div class="info-grid">
+        <div class="info-card">
+          <h3>Preparation & Processing</h3>
+          <p>Products are custom prepared and packaged within <strong>2 to 3 business days</strong> after your order is successfully received and confirmed.</p>
+        </div>
+        <div class="info-card">
+          <h3>Nationwide Dispatch</h3>
+          <p>Once dispatch-ready, standard courier delivery across South Africa typically takes an additional 2 to 4 business days depending on your location.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div>
+        <h3 class="footer-title">Wondie Herbal</h3>
+        <p class="body-text text-stone-400">Providing high-grade, wild-crafted natural remedies, herbal teas, and botanical vitality blends directly to your home.</p>
+      </div>
+      <div>
+        <h4 class="sub-heading text-emerald-300">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#philosophy">Philosophy</a></li>
+          <li><a href="#shipping">Shipping Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <div id="cart-drawer" class="drawer-overlay pointer-events-none">
+    <div id="cart-backdrop" class="drawer-backdrop"></div>
+    <div id="cart-panel" class="drawer-panel">
+      <div class="drawer-header">
+        <h3>Your Shopping Basket</h3>
+        <button id="close-cart-btn" class="close-btn">&times;</button>
+      </div>
+      <div id="cart-items" class="drawer-body">
+        </div>
+      <div class="drawer-footer">
+        <div class="subtotal-row">
+          <span>Subtotal</span>
+          <span id="cart-subtotal">R0.00</span>
+        </div>
+        <button id="checkout-btn" class="btn btn-primary btn-full">Proceed to Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="product-modal" class="modal-overlay pointer-events-none">
+    <div id="modal-backdrop" class="drawer-backdrop"></div>
+    <div class="modal-card">
+      <button id="close-modal-btn" class="close-modal-btn">&times;</button>
+      <div id="modal-content" class="modal-grid">
+        </div>
+    </div>
+  </div>
+
+  <div id="toast-container" class="toast-container"></div>
+
+  <a href="https://wa.me/27766300499?text=Hello%20Wondie%20Herbal,%20I%20have%20a%20query%20about%20your%20products" target="_blank" rel="noopener noreferrer" class="whatsapp-float" title="Contact us on WhatsApp">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+  </a>
+
+  <script src="app.js"></script>
+</body>
+</html>

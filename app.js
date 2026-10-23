@@ -11,9 +11,9 @@ const PRODUCTS = [
     category: "pro",
     tags: ["Men's Health", "Hormonal Balance", "Wild Crafted"],
     tagline: "Wild-Crafted Male Hormonal & Vitality Blend",
-    description: "M-Standard is a wild crafted, plant based capsules blend, rich in minerals and antioxidants for male hormonal balance.",
-    ingredients: "Capadulla, Chaney Root, Bladderwrack, Muira Puama.",
-    usage: "Take 4 capsules daily on an empty stomach.",
+    description: "Male-Standard offers a plant based capsules, high in minerals and blood strengthening, It support men with inflammation, prostate glands, uric acid, gout, impotance, stamina and sexual asthenia",
+    ingredients: "Sarsaparilla, Muira puama, Mondia, Blue vervain.",
+    usage: "Take 3 capsules daily before meal,For optimal results: All dairy products, meat and refined sugar must be avoided.",
     disclaimer: "Information and product do not replace professional medical diagnosis or treatment. NOTE: Proprietary blend.",
     expiry: "08/2028"
   },
@@ -52,6 +52,35 @@ const PRODUCTS = [
     tags: ["Gut Health", "Balancing", "Herbal"],
     tagline: "Harmonizing Herbal Tonic",
     description: "A master blend combining wild herbal leaves, digestive bitings, and root extracts.",
+    ingredients: "Wild Herbal Leaves, Digestive Bitter Roots, Botanical Extracts.",
+    usage: "Drink 1 glass daily before meals.",
+    disclaimer: DEFAULT_DISCLAIMER
+  },
+
+  {
+    id: "Afrodisiac",
+    name: "PURE WILD AFRODISIAC",
+    image: "assets/pure_afrodisiac.jpg",
+    price: 369.00,
+    category: "blend",
+    tags: ["Blood", "Digestion", "Sexual fatigue"],
+    tagline: "Harmonizing Herbal Tonic",
+    description: "This herbal blend helps to equalize hormones, cleans the blood, aid digestion, mental clarity, sexual fatigue, lack of appetite, increases sexual response and nerve signals",
+    
+    ingredients: "Wild Herbal Leaves, Digestive Bitter Roots, Botanical Extracts.",
+    usage: "Drink 1 glass daily before meals.",
+    disclaimer: DEFAULT_DISCLAIMER
+  },
+  {
+    id: "Brain Food",
+    name: "BRAIN FOOD",
+    image: "assets/brain_food.jpg",
+    price: 520.00,
+    category: "blend",
+    tags: ["Memory", "Mental"],
+    tagline: "Harmonizing Herbal Tonic",
+    description: "Brain Food is a high carbon based blend supporting with oxygen flow to the brain, providing essential minerals, circulation, and electrical signaling for the enhanced brain performance.",
+    
     ingredients: "Wild Herbal Leaves, Digestive Bitter Roots, Botanical Extracts.",
     usage: "Drink 1 glass daily before meals.",
     disclaimer: DEFAULT_DISCLAIMER
